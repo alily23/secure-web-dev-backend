@@ -11,6 +11,16 @@ const passport = require("passport");
 const app = express();
 const port = 3000;
 
+let cors = require("cors");
+app.use(cors());
+
+app.use((req,res,next)=>{
+  res.setHeader('Access-Control-Allow-Origin','*');
+  res.setHeader('Access-Control-Allow-Methods','GET,POST,PUT,PATCH,DELETE');
+  res.setHeader('Access-Control-Allow-Methods','Content-Type','Authorization');
+  next();
+})
+
 app.use(bodyParser.json());
 
 // Protect all /locations route with JWT Authentication

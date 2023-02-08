@@ -1,5 +1,5 @@
 const canAccess =
-  (allowedRoles = []) =>
+  (allowedRoles = ["user", "admin"]) =>
   (req, res, next) => {
     if (!allowedRoles || allowedRoles.length === 0) {
       return next();

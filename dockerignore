@@ -1,0 +1,5 @@
+nodule_modules
+npm-debug.log
+Dockerfile
+.dockerignore
+lieux-de-tournage-a-paris.json
