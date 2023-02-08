@@ -412,7 +412,7 @@
       "created": 1673974540653,
       "name": "Base Environment",
       "data": {
-        "url": "http://localhost:3000",
+        "url": "https://alison-ly-ccc-esilv.onrender.com",
         "token": "",
         "username": "",
         "password": ""
@@ -456,7 +456,7 @@
       "created": 1673974639614,
       "name": "LOCAL",
       "data": {
-        "url": "http://localhost:3000",
+        "url": "https://alison-ly-ccc-esilv.onrender.com",
         "username": "Toto",
         "password": "Toto",
         "locationId": "63c6da7e37c14b6154c881c2"
