@@ -1,6 +1,6 @@
 require("dotenv").config();
 const express = require("express");
-const locationsController = require("./src/locations/locations.controller");
+const locationsController = require("./src/recommandations/recommandations.controller");
 const usersController = require("./src/users/users.controller");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -23,9 +23,9 @@ app.use((req,res,next)=>{
 
 app.use(bodyParser.json());
 
-// Protect all /locations route with JWT Authentication
+// Protect all /recommandations route with JWT Authentication
 app.use(
-  "/locations",
+  "/recommandations",
   passport.authenticate("jwt", { session: false }),
   locationsController
 );
